@@ -25,7 +25,7 @@ h2 {
 
 h3 {
     color:rgb(0, 0, 0);
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -111,35 +111,45 @@ button {
 button p {
     font-weight: bold;
 }
+.buttonMan{
+    padding: 40px;
+}
+
+
+.cardWrapper{
+    display: flex;
+    justify-content: center;
+}
 
 .cardDisplay {
+    width: 1000px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 16px;
     padding-top: 90px;
-    max-width: 80vw;  
-    margin:auto;
 }
 
 .card {
     border-bottom: 1px solid grey;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding-bottom: 30px;
 }
+
 .card-l{
     overflow: hidden;
-    width:656px;
+    width:65%;
+}
+.card-l img{
+    width: 100%;
 }
 
 .card-s {
-    width:311px;
- 
+    width:31%;
 }
-
+.card-s img{
+    width: 100%;
+}
 .card > div > h3 {
     padding:10px 0px;
 }
@@ -181,8 +191,6 @@ footer p {
 }
 
 @media (max-width: 700px){
-
-
     header{
         display: flex;
         justify-content: space-between;
@@ -204,13 +212,34 @@ footer p {
     footer {
         display: flex;
         flex-direction: column;
+        height: auto;
     }
-
+    
+    .footerContainer {
+        margin-left: 5%;
+    }
+    
     .footerContainer nav {
         display: none;
     }
 
-    
+    .socialMediaLogos {
+        margin-bottom: 10%;
+    }
 
+    .cardDisplay{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-l{
+        display: none;
+    }
+    .card-s{
+        margin: auto;
+        width: 90%;
+        display: inline-block;}
 
+    .card-s h3{
+        font-size: 2rem;
+    }
 }
