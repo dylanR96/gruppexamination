@@ -15,11 +15,22 @@ body {
 }
 
 h1 {
-    color: black;
+    color: white;
+    font-size: 50px;
 }
 
 h2 {
     color:grey;
+}
+
+h3 {
+    color:grey;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+li{
+    list-style: none;
 }
 
 
@@ -40,26 +51,123 @@ header nav ul li{
     font-size: 20px;
     margin: 5px;
     margin-left: 20px;
-    list-style: none;
 }
+
+
+.quoteBox{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  margin-top: 100px;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.wrapper{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-style: oblique;
+}
+
+#nameTitle{
+    font-size: medium;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+#lilCircle{
+    background-color: #C4C4C4 ;
+    width: 140px;
+    height: 140px;
+
+    border-radius: 50%;
+}
+/* Nisseri Out :) */
+
+.cardDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 90px;
+    max-width: 1000px;  
+}
+
+.card-s {
+    width:311px;
+}
+
+.card-s > img {
+    width:auto;
+
+}
+
+.card-l{
+    width:656px;
+}
+
+img {
+    width: auto;
+}
+
 
 #sloganBanner{
-    background-color: rgb(204, 32, 32);
-    height: 100px;
+    background-color: #333333;
+    height: 400px;
     width: 100%;
-}
-
-h1 {
-
+    text-align: center;
+    padding-top: 160px;
 }
 
 button {
+    background-color: white;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 15px 25px 15px 25px;
+    border-radius: 20px;
+    border-style: none;
+}
 
+button p {
+    font-weight: bold;
 }
 
 footer {
-    color: white;
-    background-color: gray;
+    background-color: rgba(79, 79, 79, 1);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 400px;
+}
+
+footer h3 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.footerContainer {
+    margin-top: 70px;
+}
+
+footer li {
+    line-height: 2.5;
+    font-size: 16px;
+    color: white;
+}
+
+footer p {
+    line-height: 1.5;
+    color: white;
+    font-size: 16px;
+}
+
+.socialMediaLogos img {
+    margin-right: 25px;
 }
