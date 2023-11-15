@@ -20,11 +20,11 @@ h1 {
 }
 
 h2 {
-    color:grey;
+    color:rgb(0, 0, 0);
 }
 
 h3 {
-    color:grey;
+    color:rgb(0, 0, 0);
     font-size: 25px;
     font-weight: 700;
 }
@@ -48,9 +48,12 @@ header nav ul{
     display: flex;
 }
 header nav ul li{
-    font-size: 20px;
+    font-size: 15px;
     margin: 5px;
     margin-left: 20px;
+}
+header nav img{
+    display: none;
 }
 
 
@@ -60,9 +63,8 @@ header nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-
-  margin-top: 100px;
-
+    margin-top: 100px;
+    margin-bottom: 100px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -85,38 +87,9 @@ header nav ul li{
     background-color: #C4C4C4 ;
     width: 140px;
     height: 140px;
-
     border-radius: 50%;
 }
 /* Nisseri Out :) */
-
-.cardDisplay {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 90px;
-    max-width: 1000px;  
-}
-
-.card-s {
-    width:311px;
-}
-
-.card-s > img {
-    width:auto;
-
-}
-
-.card-l{
-    width:656px;
-}
-
-img {
-    width: auto;
-}
-
 
 #sloganBanner{
     background-color: #333333;
@@ -138,6 +111,40 @@ button {
 button p {
     font-weight: bold;
 }
+
+.cardDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 90px;
+    max-width: 80vw;  
+    margin:auto;
+}
+
+.card {
+    border-bottom: 1px solid grey;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-l{
+    overflow: hidden;
+    width:656px;
+}
+
+.card-s {
+    width:311px;
+    padding-bottom: 30px;
+}
+
+.card > div > h3 {
+    padding:10px 0px;
+}
+
+
+
 
 footer {
     background-color: rgba(79, 79, 79, 1);
@@ -170,4 +177,39 @@ footer p {
 
 .socialMediaLogos img {
     margin-right: 25px;
+}
+
+@media (max-width: 700px){
+
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    header nav img{
+        display: block;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+    #sloganBanner{
+        padding-bottom: 40px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerContainer nav {
+        display: none;
+    }
+
+    
+
+
 }
