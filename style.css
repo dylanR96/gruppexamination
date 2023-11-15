@@ -91,7 +91,7 @@ header nav img{
 }
 /* Nisseri Out :) */
 
-#sloganBanner{
+#sloganBanner {
     background-color: #333333;
     height: 400px;
     width: 100%;
@@ -209,6 +209,11 @@ footer p {
         font-size: 10px;
     }
 
+    #sloganBanner {
+        padding-top: 60px;
+    }
+
+
     footer {
         display: flex;
         flex-direction: column;
@@ -231,9 +236,11 @@ footer p {
         display: flex;
         flex-direction: column;
     }
+
     .card-l{
         display: none;
     }
+
     .card-s{
         margin: auto;
         width: 90%;
