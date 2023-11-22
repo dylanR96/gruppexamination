@@ -36,7 +36,7 @@ li{
 
 /* Simons Nisseri */
 
-header{
+.header{
     width: 100%;
     height: 100px;
     background-color: white;
@@ -44,20 +44,20 @@ header{
     align-items: center;
     justify-content: space-around;
 }
-header nav ul{
+.header__list{
     display: flex;
 }
-header nav ul li{
+.header__item{
     font-size: 15px;
     margin: 5px;
     margin-left: 20px;
 }
-header nav img{
+.header__nav--small{
     display: none;
 }
 
 
-.quoteBox{
+.quotebox{
     height: 300px;
     width: 100%;
     display: flex;
@@ -68,7 +68,7 @@ header nav img{
     background-color: rgb(255, 255, 255);
 }
 
-.wrapper{
+.quotebox__wrapper{
     display: flex;
     gap: 20px;
     align-items: center;
@@ -77,13 +77,13 @@ header nav img{
     font-style: oblique;
 }
 
-#nameTitle{
+.quotebox__author{
     font-size: medium;
     font-weight: bolder;
     font-style: oblique;
 }
 
-#lilCircle{
+.quotebox__picture--cirle{
     background-color: #C4C4C4 ;
     width: 140px;
     height: 140px;
@@ -191,17 +191,17 @@ footer p {
 }
 
 @media (max-width: 700px){
-    header{
+    .header{
         display: flex;
         justify-content: space-between;
         padding: 10px;
     }
 
-    header nav img{
+    .header__nav--small{
         display: block;
     }
 
-    header nav ul{
+    .header__list{
         display: none;
     }
 
