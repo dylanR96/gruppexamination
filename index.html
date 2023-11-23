@@ -8,20 +8,22 @@
 </head>
 <body>
     <!-- Header Av Simon -->
-    <header class="screenSize">
-        <aside>
-            <img src="/images/logo.png" alt="Logo">
+    <header class="header">
+        <aside class="header__logo">
+            <img class="header__logo--image" src="/images/logo.png" alt="Logo">
         </aside>
-        <nav>
-            <img src="/images/hamburgerMenu.png" alt="Meny">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
+        <nav class="header__nav">
+            <img class="header__nav--small" src="/images/hamburgerMenu.png" alt="Meny">
+            <ul class="header__list">
+                <li class="header__item">Home</li>
+                <li class="header__item">About</li>
+                <li class="header__item">Services</li>
+                <li class="header__item">Contact</li>
             </ul>
         </nav>
     </header>
+
+
     <main>
         <section id="sloganBanner">
             <h1>Everthing is designed</h1>
@@ -73,11 +75,11 @@
   
         </section>
         <!-- quoteBox av Simon -->
-        <section class="quoteBox">
-            <article class="wrapper">
-                <div id="lilCircle"></div>
-                <h2>" Holy smokes batman! "</h2>
-                <p id="nameTitle">Robin</p>
+        <section class="quotebox">
+            <article class="quotebox__wrapper">
+                <picture class="quotebox__picture--cirle"></picture>
+                <h2 class="quotebox__quote">" Holy smokes batman! "</h2>
+                <p id="quoteBox__author">Robin</p>
             </article>
         </section>
         <!-- :) -->
