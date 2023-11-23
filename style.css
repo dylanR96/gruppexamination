@@ -6,7 +6,6 @@
     box-sizing: border-box;
     margin: 0;
     padding:0;
-
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -32,9 +31,6 @@ h3 {
 li{
     list-style: none;
 }
-
-
-/* Simons Nisseri */
 
 .header{
     width: 100%;
@@ -89,9 +85,8 @@ li{
     height: 140px;
     border-radius: 50%;
 }
-/* Nisseri Out :) */
 
-#sloganBanner {
+.sloganBanner {
     background-color: #333333;
     height: 400px;
     width: 100%;
@@ -111,9 +106,6 @@ button {
 button p {
     font-weight: bold;
 }
-.buttonMan{
-    padding: 40px;
-}
 
 
 .cardWrapper{
@@ -122,76 +114,91 @@ button p {
 }
 
 .cardDisplay {
-    width: 1000px;
+    width:min(100%, 1000px);
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 16px;
-    padding-top: 90px;
+    gap: 1rem;
+    padding-top: 5rem;
 }
 
 .card {
+    display:flex;
+    flex-direction: column;
     border-bottom: 1px solid grey;
     padding-bottom: 30px;
 }
 
-.card-l{
+.card--large {
     overflow: hidden;
-    width:65%;
-}
-.card-l img{
-    width: 100%;
+    max-width: 41rem;
 }
 
-.card-s {
-    width:31%;
+.card--small {
+    overflow: hidden;
+    max-width:20rem;
 }
-.card-s img{
-    width: 100%;
+
+.card__img-box {
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width:100%;
+   
 }
-.card > div > h3 {
+
+.image--width {
+    min-width:20rem;
+    max-height: 18rem;
+}
+
+.card__content {
     padding:10px 0px;
 }
 
+.card__content--title  {
+    font-size: 2rem;
+    font-weight: 700;
+    margin:1rem 0;
+}
 
-
-
-footer {
+.wrapper-footer {
     background-color: rgba(79, 79, 79, 1);
     display: flex;
     justify-content: space-around;
     height: 400px;
 }
 
-footer h3 {
+.wrapper-footer__section--title {
     color: white;
-    font-size: 26px;
-    margin-bottom: 15px;
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
-.footerContainer {
-    margin-top: 70px;
+.wrapper-footer__info-container {
+    margin-top: 4em;
 }
 
-footer li {
+.wrapper-footer__list {
     line-height: 2.5;
-    font-size: 16px;
+    font-size: 1em;
     color: white;
 }
 
-footer p {
+.wrapper-footer--text {
     line-height: 1.5;
     color: white;
-    font-size: 16px;
+    font-size: 1em;
 }
 
-.socialMediaLogos img {
-    margin-right: 25px;
+.wrapper-footer--img-spacing {
+    margin-right: 1.5em;
 }
 
 @media (max-width: 700px){
-    .header{
+    
+    .header {
         display: flex;
         justify-content: space-between;
         padding: 10px;
@@ -205,48 +212,45 @@ footer p {
         display: none;
     }
 
-    h3 {
-        font-size: 10px;
-    }
 
-    #sloganBanner {
+    .sloganBanner {
         padding-top: 60px;
     }
 
-
-    footer {
+    .wrapper-footer {
         display: flex;
         flex-direction: column;
         height: auto;
     }
     
-    .footerContainer {
-        margin-left: 5%;
-    }
-    
-    .footerContainer nav {
-        display: none;
+    .wrapper-footer__info-container {
+        margin-left: 1.5em;
+        margin-top: 2em;
     }
 
-    .socialMediaLogos {
-        margin-bottom: 10%;
+    .wrapper-footer__navigation {
+        display: none;
+    }
+    
+    .wrapper-footer__logos {
+        margin-bottom: 1.5em;
     }
 
     .cardDisplay{
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
-    .card-l{
+    .card--large{
         display: none;
     }
 
-    .card-s{
+    .card--small{
         margin: auto;
-        width: 90%;
-        display: inline-block;}
-
-    .card-s h3{
-        font-size: 2rem;
+       width: 90%;
+        display: inline-block;
     }
+
+  
 }
